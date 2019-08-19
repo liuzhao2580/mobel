@@ -11,7 +11,7 @@ if (process.env.NODE_ENV === 'production') {
     }
 } else {
     //development 开发环境
-    // baseURL = 'http://192.168.10.12:8080/zhikong'
+    baseURL = 'https://www.easy-mock.com/mock/5d3183c3a368716b0b7d050f/MobelProject'
 }
 
 export default baseURL

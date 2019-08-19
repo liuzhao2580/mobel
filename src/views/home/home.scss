@@ -1,0 +1,8 @@
+@import "@/assets/css/base.scss";
+.home-box {
+    // 固定的搜索框
+    .search-box {
+        height: $HeightSearch;
+        width: 100%;
+    }
+}
