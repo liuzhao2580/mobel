@@ -60,6 +60,7 @@
             background-color: $Color_eee;
             .content {
                 overflow: hidden;
+                // 交易物流  服务通知 卡片 
                 .card {
                     display: flex;
                     background-color: $Color_fff;
@@ -78,6 +79,18 @@
                         p {
                             margin-top: -50px;
                         }
+                    }
+                }
+                // 空内容
+                .empty {
+                    margin-top: 150px;
+                    color: #C1C1C1;
+                    .iconfont {
+                        font-size: 70px;
+                    }
+                    p {
+                        color: #727272;
+                        font-size: 20px;
                     }
                 }
             }

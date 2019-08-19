@@ -49,6 +49,11 @@
                                 <p>服务通知</p>
                             </div>
                         </div>
+                        <!-- 空消息内容 -->
+                        <div class="empty">
+                            <i class="iconfont icon-kong"></i>
+                            <p>当前没有任何消息哦</p>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -67,6 +72,11 @@
                     <div class="searchInfo-back" @click="searchInfoCardBackBtn">
                         <van-icon name="arrow-left" />
                         <span>{{searchInfoPopupCard_Title}}</span>
+                    </div>
+                    <!-- 空消息内容 -->
+                    <div class="empty" style="margin-top: 200px;color: #C1C1C1">
+                        <i class="iconfont icon-kong" style="font-size: 70px;"></i>
+                        <p style="color: #727272;font-size: 16px;">当前没有任何消息哦</p>
                     </div>
                 </div>
             </div>
