@@ -12,8 +12,9 @@
             </div>
         </div>
         <!-- 扫码 -->
-        <div class="search-saoma">
+        <div class="search-saoma" @click="saomaBtn">
             <i class="iconfont icon-scancode"></i>
+            <!-- <input type="file" hidden> -->
         </div>
 
         <!-- 消息弹出框 -->
@@ -115,10 +116,10 @@ export default {
         // 用于处理用户点击物理返回按钮的事件
         fun() {
             if (this.searchInfoPopup && !this.searchInfoPopupCard) {
-                this.searchInfoPopup = false
+                this.searchInfoPopup = false;
             }
             if (this.searchInfoPopupCard) {
-                this.searchInfoPopupCard = false
+                this.searchInfoPopupCard = false;
             }
         },
         // 信息框点击事件
@@ -139,13 +140,19 @@ export default {
         InfoPopupCard(card) {
             this.searchInfoPopupCard = true;
             this.searchInfoPopupCard_Title = card;
-            this.init()
+            this.init();
         },
         // 点击返回事件
         searchInfoCardBackBtn() {
             this.searchInfoPopupCard = false;
-        }
+        },
         /** 点击交易物流或者服务通知卡片 */
+
+        /** 扫码 */
+        saomaBtn() {
+            console.log(window.plus)
+        }
+        /** 扫码 */
     },
     watch: {},
     destroyed() {
